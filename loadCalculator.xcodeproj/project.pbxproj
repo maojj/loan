@@ -14,6 +14,12 @@
 		201786301AFC4F9800BD6B30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2017862F1AFC4F9800BD6B30 /* Images.xcassets */; };
 		201786331AFC4F9800BD6B30 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 201786311AFC4F9800BD6B30 /* LaunchScreen.xib */; };
 		2017863F1AFC4F9800BD6B30 /* loadCalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2017863E1AFC4F9800BD6B30 /* loadCalculatorTests.m */; };
+		2037879C1AFC56860048F745 /* MonthlyData.m in Sources */ = {isa = PBXBuildFile; fileRef = 2037879B1AFC56860048F745 /* MonthlyData.m */; };
+		20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF51AFC9AAD00636D6D /* MonthCell.m */; };
+		20B90FFA1AFC9E5100636D6D /* MonthlyData+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF91AFC9E5100636D6D /* MonthlyData+ViewModel.m */; };
+		20B90FFD1AFCAE3200636D6D /* MonthDatasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */; };
+		20D6F4481AFC5B3C00CF7F40 /* Load.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D6F4471AFC5B3C00CF7F40 /* Load.m */; };
+		20D6F44D1AFC636A00CF7F40 /* NSDate+Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 20D6F44C1AFC636A00CF7F40 /* NSDate+Utilities.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +46,20 @@
 		201786381AFC4F9800BD6B30 /* loadCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = loadCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2017863D1AFC4F9800BD6B30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2017863E1AFC4F9800BD6B30 /* loadCalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = loadCalculatorTests.m; sourceTree = "<group>"; };
+		2037879A1AFC56860048F745 /* MonthlyData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthlyData.h; sourceTree = "<group>"; };
+		2037879B1AFC56860048F745 /* MonthlyData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthlyData.m; sourceTree = "<group>"; };
+		20B90FF41AFC9AAC00636D6D /* MonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCell.h; sourceTree = "<group>"; };
+		20B90FF51AFC9AAD00636D6D /* MonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCell.m; sourceTree = "<group>"; };
+		20B90FF81AFC9E5100636D6D /* MonthlyData+ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MonthlyData+ViewModel.h"; sourceTree = "<group>"; };
+		20B90FF91AFC9E5100636D6D /* MonthlyData+ViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MonthlyData+ViewModel.m"; sourceTree = "<group>"; };
+		20B90FFB1AFCAE3200636D6D /* MonthDatasController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthDatasController.h; sourceTree = "<group>"; };
+		20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthDatasController.m; sourceTree = "<group>"; };
+		20D6F4451AFC577300CF7F40 /* LoadCalculatorPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadCalculatorPrefixHeader.pch; sourceTree = "<group>"; };
+		20D6F4461AFC5B3C00CF7F40 /* Load.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Load.h; sourceTree = "<group>"; };
+		20D6F4471AFC5B3C00CF7F40 /* Load.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Load.m; sourceTree = "<group>"; };
+		20D6F44B1AFC636A00CF7F40 /* NSDate+Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Utilities.h"; sourceTree = "<group>"; };
+		20D6F44C1AFC636A00CF7F40 /* NSDate+Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Utilities.m"; sourceTree = "<group>"; };
+		20D6F44E1AFC658E00CF7F40 /* Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Macros.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +105,9 @@
 				20B3DD5D1AFC53A8009D98B9 /* Controllers */,
 				20B3DD5E1AFC53A8009D98B9 /* Models */,
 				20B3DD5F1AFC53A8009D98B9 /* Resources */,
+				20D6F44A1AFC635A00CF7F40 /* Utils */,
 				20B3DD601AFC53A8009D98B9 /* Vendors */,
+				20B90FF71AFC9E1B00636D6D /* ViewModels */,
 				20B3DD611AFC53A8009D98B9 /* Views */,
 			);
 			path = loadCalculator;
@@ -107,6 +129,7 @@
 				201786271AFC4F9800BD6B30 /* AppDelegate.m */,
 				201786231AFC4F9800BD6B30 /* Info.plist */,
 				201786241AFC4F9800BD6B30 /* main.m */,
+				20D6F4451AFC577300CF7F40 /* LoadCalculatorPrefixHeader.pch */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -116,6 +139,8 @@
 			children = (
 				201786291AFC4F9800BD6B30 /* ViewController.h */,
 				2017862A1AFC4F9800BD6B30 /* ViewController.m */,
+				20B90FFB1AFCAE3200636D6D /* MonthDatasController.h */,
+				20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -123,6 +148,10 @@
 		20B3DD5E1AFC53A8009D98B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				2037879A1AFC56860048F745 /* MonthlyData.h */,
+				2037879B1AFC56860048F745 /* MonthlyData.m */,
+				20D6F4461AFC5B3C00CF7F40 /* Load.h */,
+				20D6F4471AFC5B3C00CF7F40 /* Load.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -130,6 +159,9 @@
 		20B3DD5F1AFC53A8009D98B9 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2017862C1AFC4F9800BD6B30 /* Main.storyboard */,
+				2017862F1AFC4F9800BD6B30 /* Images.xcassets */,
+				201786311AFC4F9800BD6B30 /* LaunchScreen.xib */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -137,9 +169,6 @@
 		20B3DD601AFC53A8009D98B9 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
-				2017862C1AFC4F9800BD6B30 /* Main.storyboard */,
-				2017862F1AFC4F9800BD6B30 /* Images.xcassets */,
-				201786311AFC4F9800BD6B30 /* LaunchScreen.xib */,
 			);
 			path = Vendors;
 			sourceTree = "<group>";
@@ -147,8 +176,29 @@
 		20B3DD611AFC53A8009D98B9 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				20B90FF41AFC9AAC00636D6D /* MonthCell.h */,
+				20B90FF51AFC9AAD00636D6D /* MonthCell.m */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		20B90FF71AFC9E1B00636D6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				20B90FF81AFC9E5100636D6D /* MonthlyData+ViewModel.h */,
+				20B90FF91AFC9E5100636D6D /* MonthlyData+ViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		20D6F44A1AFC635A00CF7F40 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				20D6F44B1AFC636A00CF7F40 /* NSDate+Utilities.h */,
+				20D6F44C1AFC636A00CF7F40 /* NSDate+Utilities.m */,
+				20D6F44E1AFC658E00CF7F40 /* Macros.h */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,9 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D6F4481AFC5B3C00CF7F40 /* Load.m in Sources */,
+				20D6F44D1AFC636A00CF7F40 /* NSDate+Utilities.m in Sources */,
 				2017862B1AFC4F9800BD6B30 /* ViewController.m in Sources */,
+				2037879C1AFC56860048F745 /* MonthlyData.m in Sources */,
 				201786281AFC4F9800BD6B30 /* AppDelegate.m in Sources */,
+				20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */,
+				20B90FFA1AFC9E5100636D6D /* MonthlyData+ViewModel.m in Sources */,
 				201786251AFC4F9800BD6B30 /* main.m in Sources */,
+				20B90FFD1AFCAE3200636D6D /* MonthDatasController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = loadCalculator/Application/LoadCalculatorPrefixHeader.pch;
 				INFOPLIST_FILE = loadCalculator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -393,6 +450,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = loadCalculator/Application/LoadCalculatorPrefixHeader.pch;
 				INFOPLIST_FILE = loadCalculator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

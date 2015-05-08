@@ -1,0 +1,22 @@
+//
+//  LoadCalculatorPrefixHeader.pch
+//  loadCalculator
+//
+//  Created by maojj on 5/8/15.
+//  Copyright (c) 2015 maojjdev. All rights reserved.
+//
+
+#ifndef loadCalculator_LoadCalculatorPrefixHeader_pch
+#define loadCalculator_LoadCalculatorPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "Macros.h"
+
+#endif
