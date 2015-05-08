@@ -15,19 +15,19 @@
 }
 
 - (NSString *)paymentString {
-    return [NSString stringWithFormat:@"%.2f", self.payment];
+    return [NSString stringWithFormat:@"%.2Lf", self.payment];
 }
 
 - (NSString *)paymentPrincipalString {
-    return [NSString stringWithFormat:@"%.2f", self.paymentPrincipal];
+    return [NSString stringWithFormat:@"%.2Lf", self.paymentPrincipal];
 }
 
 - (NSString *)paymentInterestString {
-    return [NSString stringWithFormat:@"%.2f", self.paymentInterest];
+    return [NSString stringWithFormat:@"%.2Lf", self.paymentInterest];
 }
 
 - (NSString *)principalRestAfterString {
-    return [NSString stringWithFormat:@"%.2f", self.principalRestAfter];
+    return [NSString stringWithFormat:@"%.2Lf", self.principalRestAfter];
 }
 
 @end

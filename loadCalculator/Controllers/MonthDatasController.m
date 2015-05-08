@@ -29,7 +29,7 @@ static NSString *CellIdentifer = @"monthCell";
     self.load.totalPrincipal = 120.0 * 10000.0;
     self.load.monthCount = 360;
     self.load.startDate = [NSDate date];
-    self.load.defaultMonthlyPayment = 5492.0;
+//    self.load.defaultMonthlyPayment = 5492.0;
 
     [self.load refreshMonthDatas];
 }

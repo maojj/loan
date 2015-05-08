@@ -12,9 +12,11 @@
 
 @implementation Load
 
-- (CGFloat)defaultMonthlyPayment {
-    if (fequalzero(_defaultMonthlyPayment)) {
-
+- (long double)defaultMonthlyPayment {
+    if (fequalzero((double)_defaultMonthlyPayment)) {
+        long double result = (_totalPrincipal * _firstInterestRate * (powl((1 + _firstInterestRate), _monthCount))) /
+        (powl(1 + _firstInterestRate, _monthCount) - 1);
+        _defaultMonthlyPayment = result;
     }
     return _defaultMonthlyPayment;
 }
@@ -27,7 +29,7 @@
             lastPrincipalRest = monthData.principalRestAfter;
         }];
     } else {
-        CGFloat lastPrincipalRest = self.totalPrincipal;
+        long double lastPrincipalRest = self.totalPrincipal;
         NSMutableArray *monthDatas = [NSMutableArray arrayWithCapacity:self.monthCount];
         for (NSInteger monthIndex = 0; monthIndex < self.monthCount; monthIndex++) {
             NSDate *date = [self.startDate dateByAddingMonths:monthIndex];

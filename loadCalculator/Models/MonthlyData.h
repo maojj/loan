@@ -13,23 +13,23 @@
 @property (nonatomic, strong) NSDate *date;
 @property (nonatomic) NSUInteger monthIndex;
 
-@property (nonatomic) double monthInterestRate;
-@property (nonatomic) double principalRestBefore;
-@property (nonatomic) double payment;
+@property (nonatomic) long double monthInterestRate;
+@property (nonatomic) long double principalRestBefore;
+@property (nonatomic) long double payment;
 
-@property (nonatomic) double paymentPrincipal;
-@property (nonatomic) double paymentInterest;
+@property (nonatomic) long double paymentPrincipal;
+@property (nonatomic) long double paymentInterest;
 
-@property (nonatomic) double principalRestAfter;
+@property (nonatomic) long double principalRestAfter;
 
 @property (nonatomic) BOOL isPaymentManual;
 
 - (instancetype)initWithMonthIndex:(NSUInteger)index
                               date:(NSDate *)date
-                 monthInterestRate:(double)monthInterestRate
-               principalRestBefore:(double)principalRestBefore
-                           payment:(double)payment;
+                 monthInterestRate:(long double)monthInterestRate
+               principalRestBefore:(long double)principalRestBefore
+                           payment:(long double)payment;
 
-- (void)refreshWithPrincipalRestBefore:(double)principalRestBefore;
+- (void)refreshWithPrincipalRestBefore:(long double)principalRestBefore;
 
 @end

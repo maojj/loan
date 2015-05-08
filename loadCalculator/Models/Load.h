@@ -10,12 +10,12 @@
 
 @interface Load : NSObject
 
-@property (nonatomic) double totalPrincipal;
+@property (nonatomic) long double totalPrincipal;
 
-@property (nonatomic) double basicDiscout;
+@property (nonatomic) long double basicDiscout;
 @property (nonatomic) long double firstInterestRate;
 @property (nonatomic, strong) NSDate *startDate;
-@property (nonatomic) double defaultMonthlyPayment;
+@property (nonatomic) long double defaultMonthlyPayment;
 
 @property (nonatomic) NSUInteger monthCount;
 @property (nonatomic, strong) NSArray *monthDatas;

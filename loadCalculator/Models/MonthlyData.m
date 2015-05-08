@@ -12,9 +12,9 @@
 
 - (instancetype)initWithMonthIndex:(NSUInteger)index
                               date:(NSDate *)date
-                 monthInterestRate:(double)monthInterestRate
-               principalRestBefore:(double)principalRestBefore
-                           payment:(double)payment {
+                 monthInterestRate:(long double)monthInterestRate
+               principalRestBefore:(long double)principalRestBefore
+                           payment:(long double)payment {
     self = [super init];
     if (self) {
         [self setMonthIndex:index];
@@ -26,7 +26,7 @@
     return self;
 }
 
-- (void)refreshWithPrincipalRestBefore:(double)principalRestBefore {
+- (void)refreshWithPrincipalRestBefore:(long double)principalRestBefore {
     [self setPrincipalRestBefore:principalRestBefore];
 
     [self setPaymentInterest:(self.principalRestBefore * self.monthInterestRate)];
