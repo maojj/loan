@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 maojjdev. All rights reserved.
 //
 
-#import "Load.h"
+#import "Loan.h"
 #import "MonthlyData.h"
 #import "NSDate+Utilities.h"
 
-@implementation Load
+@implementation Loan
 
 - (long double)defaultMonthlyPayment {
     if (fequalzero((double)_defaultMonthlyPayment)) {

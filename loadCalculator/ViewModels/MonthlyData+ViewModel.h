@@ -17,4 +17,8 @@
 - (NSString *)paymentInterestString;
 - (NSString *)principalRestAfterString;
 
+
+#pragma mark - chart
+
+
 @end

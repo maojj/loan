@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface Load : NSObject
+@interface Loan : NSObject
 
 @property (nonatomic) long double totalPrincipal;
 
