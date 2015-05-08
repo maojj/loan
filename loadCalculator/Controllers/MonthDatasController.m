@@ -23,7 +23,7 @@ static NSString *CellIdentifer = @"monthCell";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.tableView.separatorColor = [UIColor clearColor];
     self.load = [Load new];
     self.load.firstInterestRate = (long double)0.04 / (long double)12.0;
     self.load.totalPrincipal = 120.0 * 10000.0;
@@ -50,6 +50,11 @@ static NSString *CellIdentifer = @"monthCell";
     MonthCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifer forIndexPath:indexPath];
     MonthlyData *monthData = self.load.monthDatas[indexPath.row];
     [cell binWithMonthlyData:monthData];
+    if (indexPath.row % 2 == 0 ) {
+        cell.backgroundColor = [UIColor whiteColor];
+    } else {
+        cell.backgroundColor = UIColorFromRGB(0xF0F0F0);
+    }
     
     return cell;
 }
