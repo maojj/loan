@@ -30,6 +30,12 @@
 		207732FE1AFCEAE600F68C22 /* PNScatterChartDataItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 207732F01AFCEAE600F68C22 /* PNScatterChartDataItem.m */; };
 		207733011AFCEC2800F68C22 /* ChartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207733001AFCEC2800F68C22 /* ChartViewController.m */; };
 		2077330A1AFCFB3900F68C22 /* UICountingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 207733091AFCFB3900F68C22 /* UICountingLabel.m */; };
+		207733121AFE37CE00F68C22 /* TFHpple.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077330D1AFE37CE00F68C22 /* TFHpple.m */; };
+		207733131AFE37CE00F68C22 /* TFHppleElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077330F1AFE37CE00F68C22 /* TFHppleElement.m */; };
+		207733141AFE37CE00F68C22 /* XPathQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = 207733111AFE37CE00F68C22 /* XPathQuery.m */; };
+		207733171AFE37FF00F68C22 /* InterestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 207733161AFE37FF00F68C22 /* InterestViewController.m */; };
+		2077331B1AFE384100F68C22 /* InterestParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077331A1AFE384100F68C22 /* InterestParser.m */; };
+		2077331D1AFE3B6E00F68C22 /* libxml2.2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2077331C1AFE3B6E00F68C22 /* libxml2.2.dylib */; };
 		20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF51AFC9AAD00636D6D /* MonthCell.m */; };
 		20B90FFA1AFC9E5100636D6D /* MonthlyData+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF91AFC9E5100636D6D /* MonthlyData+ViewModel.m */; };
 		20B90FFD1AFCAE3200636D6D /* MonthDatasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */; };
@@ -95,6 +101,17 @@
 		207733001AFCEC2800F68C22 /* ChartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChartViewController.m; sourceTree = "<group>"; };
 		207733081AFCFB3900F68C22 /* UICountingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICountingLabel.h; sourceTree = "<group>"; };
 		207733091AFCFB3900F68C22 /* UICountingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICountingLabel.m; sourceTree = "<group>"; };
+		2077330C1AFE37CE00F68C22 /* TFHpple.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHpple.h; sourceTree = "<group>"; };
+		2077330D1AFE37CE00F68C22 /* TFHpple.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHpple.m; sourceTree = "<group>"; };
+		2077330E1AFE37CE00F68C22 /* TFHppleElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TFHppleElement.h; sourceTree = "<group>"; };
+		2077330F1AFE37CE00F68C22 /* TFHppleElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TFHppleElement.m; sourceTree = "<group>"; };
+		207733101AFE37CE00F68C22 /* XPathQuery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XPathQuery.h; sourceTree = "<group>"; };
+		207733111AFE37CE00F68C22 /* XPathQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XPathQuery.m; sourceTree = "<group>"; };
+		207733151AFE37FF00F68C22 /* InterestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestViewController.h; sourceTree = "<group>"; };
+		207733161AFE37FF00F68C22 /* InterestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestViewController.m; sourceTree = "<group>"; };
+		207733191AFE384100F68C22 /* InterestParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterestParser.h; sourceTree = "<group>"; };
+		2077331A1AFE384100F68C22 /* InterestParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterestParser.m; sourceTree = "<group>"; };
+		2077331C1AFE3B6E00F68C22 /* libxml2.2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.2.dylib; path = usr/lib/libxml2.2.dylib; sourceTree = SDKROOT; };
 		20B90FF41AFC9AAC00636D6D /* MonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCell.h; sourceTree = "<group>"; };
 		20B90FF51AFC9AAD00636D6D /* MonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCell.m; sourceTree = "<group>"; };
 		20B90FF81AFC9E5100636D6D /* MonthlyData+ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MonthlyData+ViewModel.h"; sourceTree = "<group>"; };
@@ -114,6 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2077331D1AFE3B6E00F68C22 /* libxml2.2.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +166,7 @@
 		201786211AFC4F9800BD6B30 /* loadCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				2077331E1AFE3B8300F68C22 /* FrameWorks */,
 				20B3DD5C1AFC53A8009D98B9 /* Application */,
 				20B3DD5D1AFC53A8009D98B9 /* Controllers */,
 				20B3DD5E1AFC53A8009D98B9 /* Models */,
@@ -215,6 +234,34 @@
 			path = UICountingLabel;
 			sourceTree = "<group>";
 		};
+		2077330B1AFE37CE00F68C22 /* TFHpple */ = {
+			isa = PBXGroup;
+			children = (
+				2077330C1AFE37CE00F68C22 /* TFHpple.h */,
+				2077330D1AFE37CE00F68C22 /* TFHpple.m */,
+				2077330E1AFE37CE00F68C22 /* TFHppleElement.h */,
+				2077330F1AFE37CE00F68C22 /* TFHppleElement.m */,
+				207733101AFE37CE00F68C22 /* XPathQuery.h */,
+				207733111AFE37CE00F68C22 /* XPathQuery.m */,
+			);
+			path = TFHpple;
+			sourceTree = "<group>";
+		};
+		207733181AFE381200F68C22 /* DataObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataObjects;
+			sourceTree = "<group>";
+		};
+		2077331E1AFE3B8300F68C22 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				2077331C1AFE3B6E00F68C22 /* libxml2.2.dylib */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
 		20B3DD5C1AFC53A8009D98B9 /* Application */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +281,8 @@
 				20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */,
 				207732FF1AFCEC2800F68C22 /* ChartViewController.h */,
 				207733001AFCEC2800F68C22 /* ChartViewController.m */,
+				207733151AFE37FF00F68C22 /* InterestViewController.h */,
+				207733161AFE37FF00F68C22 /* InterestViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -241,10 +290,13 @@
 		20B3DD5E1AFC53A8009D98B9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				207733181AFE381200F68C22 /* DataObjects */,
 				2037879A1AFC56860048F745 /* MonthlyData.h */,
 				2037879B1AFC56860048F745 /* MonthlyData.m */,
 				20D6F4461AFC5B3C00CF7F40 /* Loan.h */,
 				20D6F4471AFC5B3C00CF7F40 /* Loan.m */,
+				207733191AFE384100F68C22 /* InterestParser.h */,
+				2077331A1AFE384100F68C22 /* InterestParser.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -262,6 +314,7 @@
 		20B3DD601AFC53A8009D98B9 /* Vendors */ = {
 			isa = PBXGroup;
 			children = (
+				2077330B1AFE37CE00F68C22 /* TFHpple */,
 				207733071AFCFB3900F68C22 /* UICountingLabel */,
 				207732D21AFCEAE600F68C22 /* PNChart */,
 			);
@@ -401,21 +454,26 @@
 				20D6F4481AFC5B3C00CF7F40 /* Loan.m in Sources */,
 				20D6F44D1AFC636A00CF7F40 /* NSDate+Utilities.m in Sources */,
 				2037879C1AFC56860048F745 /* MonthlyData.m in Sources */,
+				207733121AFE37CE00F68C22 /* TFHpple.m in Sources */,
 				207732FC1AFCEAE600F68C22 /* PNScatterChart.m in Sources */,
 				201786281AFC4F9800BD6B30 /* AppDelegate.m in Sources */,
+				207733171AFE37FF00F68C22 /* InterestViewController.m in Sources */,
 				207732F11AFCEAE600F68C22 /* PNBar.m in Sources */,
 				207732FA1AFCEAE600F68C22 /* PNPieChart.m in Sources */,
 				207732FE1AFCEAE600F68C22 /* PNScatterChartDataItem.m in Sources */,
 				207732F81AFCEAE600F68C22 /* PNLineChartData.m in Sources */,
 				2077330A1AFCFB3900F68C22 /* UICountingLabel.m in Sources */,
+				207733141AFE37CE00F68C22 /* XPathQuery.m in Sources */,
 				20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */,
 				207732F51AFCEAE600F68C22 /* PNColor.m in Sources */,
 				207733011AFCEC2800F68C22 /* ChartViewController.m in Sources */,
+				207733131AFE37CE00F68C22 /* TFHppleElement.m in Sources */,
 				207732F21AFCEAE600F68C22 /* PNBarChart.m in Sources */,
 				20B90FFA1AFC9E5100636D6D /* MonthlyData+ViewModel.m in Sources */,
 				207732F41AFCEAE600F68C22 /* PNCircleChart.m in Sources */,
 				207732F61AFCEAE600F68C22 /* PNGenericChart.m in Sources */,
 				207732F31AFCEAE600F68C22 /* PNChartLabel.m in Sources */,
+				2077331B1AFE384100F68C22 /* InterestParser.m in Sources */,
 				201786251AFC4F9800BD6B30 /* main.m in Sources */,
 				20B90FFD1AFCAE3200636D6D /* MonthDatasController.m in Sources */,
 				207732FB1AFCEAE600F68C22 /* PNPieChartDataItem.m in Sources */,
@@ -554,6 +612,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(PROJECT_DIR)/loadCalculator/Vendors/",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = loadCalculator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -571,6 +630,7 @@
 					"$(inherited)",
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"$(PROJECT_DIR)/loadCalculator/Vendors/",
+					"$(SDKROOT)/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = loadCalculator/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
