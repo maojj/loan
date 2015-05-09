@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    InterestParser *parser = [[InterestParser alloc] initWithXMLFilePath:@"http://www.bjgjj.gov.cn/wsyw/ll/gjjdkll.xml"];
+    InterestParser *parser = [[InterestParser alloc] init];
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         [parser beginParse];
     });

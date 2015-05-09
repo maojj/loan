@@ -39,6 +39,7 @@
 		207733211AFE3E7500F68C22 /* Interest.m in Sources */ = {isa = PBXBuildFile; fileRef = 207733201AFE3E7500F68C22 /* Interest.m */; };
 		207733231AFE433200F68C22 /* gjjdkll.xml in Resources */ = {isa = PBXBuildFile; fileRef = 207733221AFE433200F68C22 /* gjjdkll.xml */; };
 		207733251AFE433C00F68C22 /* sydkll.xml in Resources */ = {isa = PBXBuildFile; fileRef = 207733241AFE433C00F68C22 /* sydkll.xml */; };
+		2077332E1AFE4DEE00F68C22 /* ApplicationAgent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2077332D1AFE4DEE00F68C22 /* ApplicationAgent.m */; };
 		20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF51AFC9AAD00636D6D /* MonthCell.m */; };
 		20B90FFA1AFC9E5100636D6D /* MonthlyData+ViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FF91AFC9E5100636D6D /* MonthlyData+ViewModel.m */; };
 		20B90FFD1AFCAE3200636D6D /* MonthDatasController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20B90FFC1AFCAE3200636D6D /* MonthDatasController.m */; };
@@ -119,6 +120,8 @@
 		207733201AFE3E7500F68C22 /* Interest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Interest.m; sourceTree = "<group>"; };
 		207733221AFE433200F68C22 /* gjjdkll.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gjjdkll.xml; sourceTree = "<group>"; };
 		207733241AFE433C00F68C22 /* sydkll.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = sydkll.xml; sourceTree = "<group>"; };
+		2077332C1AFE4DEE00F68C22 /* ApplicationAgent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationAgent.h; sourceTree = "<group>"; };
+		2077332D1AFE4DEE00F68C22 /* ApplicationAgent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationAgent.m; sourceTree = "<group>"; };
 		20B90FF41AFC9AAC00636D6D /* MonthCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonthCell.h; sourceTree = "<group>"; };
 		20B90FF51AFC9AAD00636D6D /* MonthCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonthCell.m; sourceTree = "<group>"; };
 		20B90FF81AFC9E5100636D6D /* MonthlyData+ViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MonthlyData+ViewModel.h"; sourceTree = "<group>"; };
@@ -278,6 +281,8 @@
 		2077332B1AFE4DBA00F68C22 /* Agent */ = {
 			isa = PBXGroup;
 			children = (
+				2077332C1AFE4DEE00F68C22 /* ApplicationAgent.h */,
+				2077332D1AFE4DEE00F68C22 /* ApplicationAgent.m */,
 			);
 			path = Agent;
 			sourceTree = "<group>";
@@ -484,6 +489,7 @@
 				207732FE1AFCEAE600F68C22 /* PNScatterChartDataItem.m in Sources */,
 				207732F81AFCEAE600F68C22 /* PNLineChartData.m in Sources */,
 				2077330A1AFCFB3900F68C22 /* UICountingLabel.m in Sources */,
+				2077332E1AFE4DEE00F68C22 /* ApplicationAgent.m in Sources */,
 				207733141AFE37CE00F68C22 /* XPathQuery.m in Sources */,
 				20B90FF61AFC9AAD00636D6D /* MonthCell.m in Sources */,
 				207732F51AFCEAE600F68C22 /* PNColor.m in Sources */,

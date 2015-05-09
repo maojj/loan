@@ -5,6 +5,24 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Interest View Controller-->
+        <scene sceneID="oRb-YK-FAc">
+            <objects>
+                <viewController id="SVJ-xr-MIR" customClass="InterestViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4lY-pg-FTp"/>
+                        <viewControllerLayoutGuide type="bottom" id="h25-BL-LXV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QUs-39-EC2">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQl-hM-UjV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1377" y="379"/>
+        </scene>
         <!--Month Datas Controller-->
         <scene sceneID="cIU-oV-rJe">
             <objects>
@@ -146,7 +164,15 @@
                             <outlet property="delegate" destination="Jwa-j0-fbS" id="fyz-zc-khr"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="Yx4-dl-ugZ"/>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="c4J-eK-3Ck">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="1aq-Tc-S5p">
+                            <connections>
+                                <segue destination="SVJ-xr-MIR" kind="show" id="4VV-OF-1gD"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="chart" id="CVi-O8-VAU">
                             <connections>
                                 <action selector="charButtonPressed:" destination="Jwa-j0-fbS" id="kKo-ek-mAx"/>
@@ -154,10 +180,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9wz-vy-nKe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1307" y="1068"/>
+            <point key="canvasLocation" x="1258" y="1068"/>
         </scene>
         <!--Chart View Controller-->
         <scene sceneID="3aQ-0D-K8v">

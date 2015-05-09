@@ -12,25 +12,28 @@
 
 @interface InterestParser()
 
-@property (nonatomic, strong) NSString *filePath;
+@property (nonatomic, strong) NSURL *fileUrl;
 
 @end
 
 @implementation InterestParser
 
-- (instancetype)initWithXMLFilePath:(NSString *)path {
+- (instancetype)init {
+    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"gjjdkll" ofType:@"xml"];
+    NSURL *localFileUrl = [NSURL fileURLWithPath:filePath];
+    return [self initWithXMLFileURL:localFileUrl];
+}
+
+- (instancetype)initWithXMLFileURL:(NSURL *)fileUrl {
     self = [super init];
     if (self) {
-        [self setFilePath:path];
+        [self setFileUrl:fileUrl];
     }
     return self;
 }
 
-- (void)beginParse {
-//    NSURL *xmlurl = [NSURL URLWithString:_filePath];
-//    NSData *data = [NSData dataWithContentsOfURL:xmlurl];
-    NSString *filePath = [[NSBundle mainBundle] pathForResource:@"gjjdkll" ofType:@"xml"];
-    NSData *data = [NSData dataWithContentsOfFile:filePath];
+- (NSArray *)beginParse {
+    NSData *data = [NSData dataWithContentsOfURL:_fileUrl];
     TFHpple *doc = [[TFHpple alloc] initWithData:data isXML:YES];
     NSArray *recordsElements = [doc searchWithXPathQuery:@"//record"];
 
@@ -53,7 +56,11 @@
         }
     }];
 
-
+    NSArray *interests = [interestDic allValues];
+    NSArray *sortedInterests = [interests sortedArrayUsingComparator:^NSComparisonResult(Interest *obj1, Interest *obj2) {
+       return [obj1.publishDate compare:obj2.publishDate];
+    }];
+    return sortedInterests;
 }
 
 @end

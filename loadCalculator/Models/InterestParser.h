@@ -10,8 +10,8 @@
 
 @interface InterestParser : NSObject
 
-- (instancetype)initWithXMLFilePath:(NSString *)path;
+- (instancetype)initWithXMLFileURL:(NSURL *)fileUrl;
 
-- (void)beginParse;
+- (NSArray *)beginParse;
 
 @end
