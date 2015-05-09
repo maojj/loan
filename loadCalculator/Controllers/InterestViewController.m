@@ -35,18 +35,20 @@
     lineChart.xUnit = @"时间";
     lineChart.yUnit = @"利率";
     lineChart.yFixedValueMin = 0.0;
-    lineChart.yFixedValueMax = 0.1;
+    lineChart.yFixedValueMax = 0.08;
 
     [lineChart setXLabels:[self getLabels]];
-    [lineChart setYLabels:@[@"0", @"1%", @"2%", @"3%", @"4%", @"5%", @"6%", @"7%", @"8%", @"9%", @"10%"]];
+    [lineChart setYLabels:@[@"0", @"1%", @"2%", @"3%", @"4%", @"5%", @"6%", @"7%", @"8%"]];
+
 
     PNLineChartData *data01 = [self lineChartForYears:1];
-    PNLineChartData *data05 = [self lineChartForYears:5];
+    PNLineChartData *data03 = [self lineChartForYears:2];
+    PNLineChartData *data05 = [self lineChartForYears:3];
+    PNLineChartData *data10 = [self lineChartForYears:4];
+    PNLineChartData *data20 = [self lineChartForYears:5];
     PNLineChartData *data30 = [self lineChartForYears:30];
 
-
-
-    lineChart.chartData = @[data01, data05, data30];
+    lineChart.chartData = @[data01, data03, data05, data10, data20, data30];
     [lineChart strokeChart];
 
     lineChart.hasLegend = YES;
@@ -79,13 +81,37 @@
 }
 
 - (PNLineChartData *)lineChartForYears:(NSUInteger)years {
+    static NSArray *colors;
+    if (!colors) {
+        colors = @[
+                        PNLightBlue
+                        ,PNGreen
+                        ,PNFreshGreen
+                        ,PNDeepGreen
+                        ,PNRed
+                        ,PNMauve
+                        ,PNBrown
+                        ,PNBlue
+                        ,PNYellow
+                        ,PNDarkYellow
+                        ,PNPinkDark
+                        ,PNTwitterColor
+                        ,PNWeiboColor
+                        ,PNiOSGreenColor];
+
+    }
+
+    NSArray *styles = @[@(PNLineChartPointStyleCircle), @(PNLineChartPointStyleSquare),@(PNLineChartPointStyleTriangle)];
+
+
     NSArray * data01Array = [self dataArrayForYears:years];
     PNLineChartData *data01 = [PNLineChartData new];
+    data01.color = colors[((years / styles.count) % (colors.count))];
     data01.dataTitle = [NSString stringWithFormat:@"%lu年", (unsigned long)years];
-    data01.color = PNFreshGreen;
     data01.alpha = 0.3f;
     data01.itemCount = data01Array.count;
-    data01.inflexionPointStyle = PNLineChartPointStyleTriangle;
+    PNLineChartPointStyle style = (PNLineChartPointStyle)[styles[years % (styles.count)] unsignedIntegerValue];
+    data01.inflexionPointStyle = style;
     data01.getData = ^(NSUInteger index) {
         CGFloat yValue = [data01Array[index] floatValue];
         return [PNLineChartDataItem dataItemWithY:yValue];
