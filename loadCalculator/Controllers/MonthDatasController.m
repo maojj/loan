@@ -31,7 +31,6 @@ static NSString *CellIdentifer = @"monthCell";
     self.load.monthCount = 360;
     self.load.startDate = [NSDate date];
 //    self.load.defaultMonthlyPayment = 5492.0;
-    NSString *string = [NSString stringWithContentsOfURL:[NSURL URLWithString:@"http://www.bjgjj.gov.cn/wsyw/ll/gjjdkll.xml"] encoding:NSUTF8StringEncoding error:nil];
 
     [self.load refreshMonthDatas];
 }

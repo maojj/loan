@@ -27,4 +27,20 @@ blue : ((float)((rgbValue) & 0xFF)) / 255.0 \
 alpha : (alphaValue)]
 
 
+// 声明一个单例方法
+#define DECLARE_SHARED_INSTANCE  \
++ (instancetype)sharedInstance;
+
+// 实现一个单例方法
+#define IMPLEMENT_SHARED_INSTANCE  \
++ (instancetype)sharedInstance \
+{ \
+static dispatch_once_t onceToken; \
+static id sharedInstance = nil; \
+dispatch_once(&onceToken, ^{ \
+sharedInstance = [[self alloc] init]; \
+}); \
+return sharedInstance; \
+}
+
 #endif
