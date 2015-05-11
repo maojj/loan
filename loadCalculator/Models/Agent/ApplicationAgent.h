@@ -12,7 +12,9 @@
 
 DECLARE_SHARED_INSTANCE
 
-/// 公布的利率，年限为 years 的利率
-- (NSArray *)interestArrayForYears:(NSUInteger)years;
+/// 公布的利率，按时间顺序返回多次公布的利率
+- (NSArray *)gjjInterestArray;
+
+- (NSArray *)syInterestArray;
 
 @end
